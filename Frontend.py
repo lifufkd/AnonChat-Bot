@@ -31,8 +31,10 @@ class Bot_phrase:
         return phrases[_type]
 
     def chose_language(self, language):
-        if language == 'RU':
+        if language == 'ru':
             phrases = self.__ru
-        elif language == 'EN':
+        else:
             phrases = self.__en
         return phrases
+
+
